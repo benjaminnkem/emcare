@@ -1,0 +1,25 @@
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>Your trusted pharmacy and store providing quality health products and everyday essentials.</p>
+    </div>
+    <div class="footer-section contact">
+      <h3>Contact</h3>
+      <p>Email:support@emcarepharmacystore.com</p>
+      <p>Phone: +234 800 7878 9874</p>
+      <p>Address: 12 camp junction,Abeokuta.</p>
+    </div>
+    <div class="footer-section social">
+      <h3>Follow us</h3>
+      <a href=""><img src=".\assets\facebook image.png" alt="" srcset=""></a>
+      <a href=""><img src=".\assets\twitter image.png" alt="" srcset=""></a>
+      <a href=""><img src=".\assets\instagram image.png" alt="" srcset=""></a>
+      </div>
+      <div class="footer-bottom">
+       <p> &copy;2025 Emcare Pharmacy & Store.All rights reserved. </p>
+      </div>
+  </footer>
+  
+    
+    
