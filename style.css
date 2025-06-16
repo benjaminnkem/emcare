@@ -12,3 +12,20 @@ body {
   background-color: var(--background);
   overflow-x: hidden;
 }
+.dropdown a{
+  display: block;
+  padding: 5px 10px;
+}
+
+.dropdown .gro-dropdown{
+  position: absolute;
+  display: none;
+}
+.dropdown:hover .gro-dropdown{
+  display: block;
+}
+
+.dropdown a:hover{
+ color: rgb(37, 37, 228);
+}
+
