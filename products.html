@@ -6,6 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
     <title>Emcare Stores</title>
 
     <style type="text/tailwindcss">
@@ -20,6 +21,217 @@
 
   </head>
   <body>
+
+
+     <header>
+      <nav class="flex items-center justify-between px-6 py-3 shadow bg-white">
+        <!-- Logo -->
+        <div class="text-xl font-semibold text-primary">Emcare</div>
+
+        <!-- Search Bar -->
+        <div
+          class="flex items-center bg-blue-50 px-3 py-2 rounded-full w-full md:max-w-md max-w-xs mx-6"
+        >
+          <svg
+            class="w-4 h-4 text-primary mr-2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"
+            />
+          </svg>
+          <input
+            type="text"
+            placeholder="Search essentials, groceries and more..."
+            class="bg-transparent flex-grow outline-none text-sm text-gray-700 placeholder-gray-400"
+          />
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center space-x-4 text-sm">
+          <div
+            class="flex items-center text-gray-600 gap-1 hover:text-primary cursor-pointer"
+          >
+            <a href="signin.html"><img src="/assets/user.svg" alt="user" /></a>
+            <a href="signup.html" class="lg:block hidden">Sign Up</a
+            ><a href="signin.html" class="lg:block hidden"> / Sign In</a>
+          </div>
+          <div class="h-5 w-px bg-gray-300"></div>
+          <div>
+            <a href="cart.html"
+              ><div
+                class="flex items-center text-gray-600 gap-1 hover:text-primary cursor-pointer"
+              >
+                <img src="/assets/cart.svg" alt="cart" />
+                <span class="lg:block hidden">Cart</span>
+              </div></a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Category Menu -->
+      <div
+        class="flex space-x-3 px-6 py-3 overflow-x-auto bg-white border-y border-gray-50"
+      >
+        <!-- Example Category Button -->
+
+        <div class="dropdown">
+          <button
+            class="flex items-center space-x-1 px-4 py-2 bg-primary text-white rounded-full text-sm whitespace-nowrap"
+          >
+            <span>Groceries</span>
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <div class="gro-dropdown bg-white shadow-lg rounded-xl p-2">
+            <a href="">Caffeine and Beverages</a>
+            <a href="">Household & Miscellaneous</a>
+            <a href="">Snack</a>
+            <a href="">Dairy</a>
+            <a href="">Pantry</a>
+          </div>
+        </div>
+
+        <!-- Other Category Buttons -->
+        <div class="dropdown">
+          <button
+            class="flex items-center space-x-1 px-4 py-2 bg-primary/10 rounded-full text-sm whitespace-nowrap"
+          >
+            <span>Premium Fruits</span>
+            <img src="/assets/arrow-down.svg" alt="arrow-down" />
+          </button>
+ 
+          <div class="gro-dropdown bg-white shadow-lg rounded-xl p-2">
+            <a href="">Citrus fruits</a>
+            <a href="">Stone fruits</a>
+            <a href="">Pome fruits</a>
+            <a href="">Berries fruits</a>
+            <a href="">Melon fruits</a>
+            <a href="">Dry fruits</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button
+            class="flex items-center space-x-1 px-4 py-2 bg-primary/10 rounded-full text-sm whitespace-nowrap"
+          >
+            <span>Home & Kitchen</span>
+            <img src="/assets/arrow-down.svg" alt="arrow-down" />
+          </button>
+
+          <div class="gro-dropdown bg-white shadow-lg rounded-xl p-2">
+            <a href="">Kitchen and Dinners</a>
+            <a href="">Kitchen organisation and storage</a>
+            <a href="">Cleaning supplies</a>
+            <a href="">Home decor</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button
+            class="flex items-center space-x-1 px-4 py-2 bg-primary/10 rounded-full text-sm whitespace-nowrap"
+          >
+            <span>Fashion</span>
+            <img src="/assets/arrow-down.svg" alt="arrow-down" />
+          </button>
+
+          <div class="gro-dropdown bg-white shadow-lg rounded-xl p-2">
+            <a href="">Men's wear</a>
+            <a href="">Women's wear</a>
+            <a href="">Children's wear</a>
+            <a href="">Accessories</a>
+            <a href="">Foot wear</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button
+            class="flex items-center space-x-1 px-4 py-2 bg-primary/10 rounded-full text-sm whitespace-nowrap"
+          >
+            <span>Electronics</span>
+            <img src="/assets/arrow-down.svg" alt="arrow-down" />
+          </button>
+
+          <div class="gro-dropdown bg-white shadow-lg rounded-xl p-2">
+            <a href="">Kitchen Appliances</a>
+            <a href="">Home Appliances</a>
+            <a href="">Personal Appliances</a>
+            <a href="">Entertainment Appliances</a>
+            <a href="">Small Electronic Gadget</a>
+            <a href=""> Other Household Electronic</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button
+            class="flex items-center space-x-1 px-4 py-2 bg-primary/10 rounded-full text-sm whitespace-nowrap"
+          >
+            <span>Beauty</span>
+            <img src="/assets/arrow-down.svg" alt="arrow-down" />
+          </button>
+
+          <div class="gro-dropdown bg-white shadow-lg rounded-xl p-2">
+            <a href="">Skin Care</a>
+            <a href="">Makeup</a>
+            <a href="">Hair Care</a>
+            <a href="">Body Care</a>
+            <a href="">Fragrance</a>
+            <a href="">Personal Care</a>
+            <a href="">Nail Care</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="flex items-center space-x-1 px-4 py-2 bg-primary/10 rounded-full text-sm whitespace-nowrap"
+          >
+            <span>Home Improvement</span>
+            <img src="/assets/arrow-down.svg" alt="arrow-down" />
+          </button>
+
+          <div class="gro-dropdown bg-white shadow-lg rounded-xl p-2">
+            <a href="">Hard Wear</a>
+            <a href="">Plumbing component</a>
+            <a href="">Electronic Component</a>
+            <a href="">painting Supplies Tools</a>
+            <a href="">Home Fixture</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button
+            class="flex items-center space-x-1 px-4 py-2 bg-primary/10 rounded-full text-sm whitespace-nowrap"
+          >
+            <span>Sports, Toys & Luggage</span>
+            <img src="/assets/arrow-down.svg" alt="arrow-down" />
+          </button>
+
+          <div class="gro-dropdown bg-white shadow-lg rounded-xl p-2">
+            <a href="">Toys Component</a>
+            <a href="">Sports Component</a>
+            <a href="">Luggage Component</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <!-- groceries section -->
      <div >
           
@@ -1276,5 +1488,48 @@ Neutrogena Body Oil Light Sasame Formula 8.5 fl oz</p>
 
       
      </div>
+
+
+     
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            Your trusted pharmacy and store providing quality health products
+            and everyday essentials.
+          </p>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact</h3>
+          <p>Email:support@emcarepharmacystore.com</p>
+          <p>Phone: +234 800 7878 9874</p>
+          <p>Address: 12 camp junction,Abeokuta.</p>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow us</h3>
+          <a href=""
+            ><img src="./assets/facebook.png" alt="" class="rounded-full"
+          /></a>
+          <a href=""
+            ><img src="./assets/twitter.jpg" alt="" class="rounded-full"
+          /></a>
+          <a href=""
+            ><img src="./assets/instagram.jpeg" alt="" class="rounded-full"
+          /></a>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            <a href="privacy-policy.html">
+              <p class="font-medium border-b w-fit mx-auto border-primary">
+                Privacy Policy
+              </p></a
+            >
+          </div>
+
+          <p>&copy;2025 Emcare Pharmacy & Store.All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
