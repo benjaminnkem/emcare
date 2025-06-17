@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <title>Emcare Stores</title>
 
+    <link rel="stylesheet" href="footer.css">
+
     <style type="text/tailwindcss">
       @theme {
         --color-primary: #338ecc;
@@ -20,10 +22,64 @@
 
   </head>
   <body>
+    <header>
+<nav class="flex items-center justify-between px-6 py-3 shadow bg-white">
+        <!-- Logo -->
+        <div class="text-xl font-semibold text-primary">Emcare</div>
+
+        <!-- Search Bar -->
+        <div
+          class="flex items-center bg-blue-50 px-3 py-2 rounded-full w-full md:max-w-md max-w-xs mx-6"
+        >
+          <svg
+            class="w-4 h-4 text-primary mr-2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"
+            />
+          </svg>
+          <input
+            type="text"
+            placeholder="Search essentials, groceries and more..."
+            class="bg-transparent flex-grow outline-none text-sm text-gray-700 placeholder-gray-400"
+          />
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center space-x-4 text-sm">
+          <div
+            class="flex items-center text-gray-600 gap-1 hover:text-primary cursor-pointer"
+          >
+            <a href="signin.html"><img src="/assets/user.svg" alt="user" /></a>
+            <a href="signup.html" class="lg:block hidden">Sign Up</a
+            ><a href="signin.html" class="lg:block hidden"> / Sign In</a>
+          </div>
+          <div class="h-5 w-px bg-gray-300"></div>
+          <div>
+            <a href="cart.html"
+              ><div
+                class="flex items-center text-gray-600 gap-1 hover:text-primary cursor-pointer"
+              >
+                <img src="/assets/cart.svg" alt="cart" />
+                <span class="lg:block hidden">Cart</span>
+              </div></a
+            >
+          </div>
+        </div>
+      </nav>
+
+    </header>
     <!-- groceries section -->
      <div >
-          
+          <br>
       <p>Groceries</p>
+      <br>
        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 scrollbar-hide">
         <div class="border border-gray-100 hover:shadow-2xl cursor-pointer hover:ring ring-primary duration-300 rounded-lg p-3 shadow-sm bg-white"  >
           <img src="/assets/ciroc Red berry.jpg" alt=""
@@ -217,8 +273,11 @@
 
 
 
-
-<p>premium fruit</p>
+<br>
+<hr>
+<br>
+<p class="text-lg md:text-xl font-semibold">premium fruit</p>
+<br>
 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 scrollbar-hide">
     <div class="border border-gray-100 hover:shadow-2xl cursor-pointer hover:ring ring-primary duration-300 rounded-lg p-3 shadow-sm bg-white"  >
           <img src="/assets/New folder (4)/avacodo.jpeg" alt=""
@@ -386,9 +445,11 @@
 
 
 
-
-<p>Home and Kitchen</p>
-  
+<br>
+<hr>
+<br>
+<p class=" md:text-xl font-semibold">Home and Kitchen</p>
+ <br> 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 scrollbar-hide">
     <div class="border border-gray-100 hover:shadow-2xl cursor-pointer hover:ring ring-primary duration-300 rounded-lg p-3 shadow-sm bg-white"  >
           <img src="/assets/home and kitchen/ninja-speedi-compress.webp" alt=""
@@ -544,9 +605,11 @@
 
 
 
-
-  <p>Fashion</p>
-  
+<br>
+<hr>
+<br>
+  <p class="text-lg md:text-xl font-semibold">Fashion</p>
+ <br> 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 scrollbar-hide">
     <div class="border border-gray-100 hover:shadow-2xl cursor-pointer hover:ring ring-primary duration-300 rounded-lg p-3 shadow-sm bg-white"  >
           <img src="/assets/fashion/t-shirt.jpg" alt=""
@@ -741,9 +804,10 @@
 
 
 
-
-  <p>Electronics</p>
-  
+<br>
+<hr>
+  <p class="text-lg md:text-xl font-semibold">Electronics</p>
+ <br> 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 scrollbar-hide">
     <div class="border border-gray-100 hover:shadow-2xl cursor-pointer hover:ring ring-primary duration-300 rounded-lg p-3 shadow-sm bg-white"  >
           <img src="/assets/electronics/AeonFreezer_Model102frontopen.webp" alt=""
@@ -892,9 +956,10 @@
 </div>
 
 
-
-<p>Beauty</p>
-  
+<br>
+<hr>
+<p class=" md:text-xl font-semibold" >Beauty</p>
+ <br> 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 scrollbar-hide">
     <div class="border border-gray-100 hover:shadow-2xl cursor-pointer hover:ring ring-primary duration-300 rounded-lg p-3 shadow-sm bg-white"  >
           <img src="/assets/beauty/bgs-1-1-768x768.jpg" alt=""
@@ -1015,7 +1080,7 @@ Neutrogena Body Oil Light Sasame Formula 8.5 fl oz</p>
 
 
   </div>
-<!-- pagination for fashion -->
+<!-- pagination for beauty -->
 
   <div class="flex justify-center mt-8">
   <nav class="inline-flex shadow-sm rounded-md" aria-label="Pagination">
@@ -1049,9 +1114,10 @@ Neutrogena Body Oil Light Sasame Formula 8.5 fl oz</p>
 </div>
 
 
-
-<p>Home Improvement</p>
-  
+<br>
+<hr>
+<p class=" md:text-xl font-semibold">Home Improvement</p>
+ <br> 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 scrollbar-hide">
     <div class="border border-gray-100 hover:shadow-2xl cursor-pointer hover:ring ring-primary duration-300 rounded-lg p-3 shadow-sm bg-white"  >
           <img src="/assets/home improvement/shopping.webp" alt=""
@@ -1144,10 +1210,13 @@ Neutrogena Body Oil Light Sasame Formula 8.5 fl oz</p>
 </div>
 
 
-
-
-<p>sport, toys,luggage</p>
-  
+<div>
+<br>
+<hr>
+<br>
+<p class="text-lg md:text-xl font-semibold">sport, toys,luggage</p>
+  <br>
+  <br>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 scrollbar-hide">
     <div class="border border-gray-100 hover:shadow-2xl cursor-pointer hover:ring ring-primary duration-300 rounded-lg p-3 shadow-sm bg-white"  >
           <img src="/assets/lugade/7536247_R_SET.webp" alt=""
@@ -1235,7 +1304,7 @@ Neutrogena Body Oil Light Sasame Formula 8.5 fl oz</p>
 
 
   </div>
-<!-- pagination for fashion -->
+<!-- pagination for sport lugggage-->
 
   <div class="flex justify-center mt-8">
   <nav class="inline-flex shadow-sm rounded-md" aria-label="Pagination">
@@ -1267,6 +1336,8 @@ Neutrogena Body Oil Light Sasame Formula 8.5 fl oz</p>
     </a>
   </nav>
 </div>
+</div>
+
 
 
 
@@ -1276,5 +1347,49 @@ Neutrogena Body Oil Light Sasame Formula 8.5 fl oz</p>
 
       
      </div>
+     <br>
+     <br>
+
+
+     <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            Your trusted pharmacy and store providing quality health products
+            and everyday essentials.
+          </p>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact</h3>
+          <p>Email:support@emcarepharmacystore.com</p>
+          <p>Phone: +234 800 7878 9874</p>
+          <p>Address: 12 camp junction,Abeokuta.</p>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow us</h3>
+          <a href=""
+            ><img src="./assets/facebook.png" alt="" class="rounded-full"
+          /></a>
+          <a href=""
+            ><img src="./assets/twitter.jpg" alt="" class="rounded-full"
+          /></a>
+          <a href=""
+            ><img src="./assets/instagram.jpeg" alt="" class="rounded-full"
+          /></a>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            <a href="privacy-policy.html">
+              <p class="font-medium border-b w-fit mx-auto border-primary">
+                Privacy Policy
+              </p></a
+            >
+          </div>
+
+          <p>&copy;2025 Emcare Pharmacy & Store.All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
